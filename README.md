@@ -20,4 +20,4 @@ Wanna help us? - 希望帮助我们?
 
 The project is running by DiTe Assn under IOLITE Project. Please view our site: http://iolite.icoud.tk
 
-项目由数字信息社管理，是堇青石计划的一部分。可以访问我们的网站了解详情：http://iolite.icoud.tk。另外可在每周五社团活动时间至实验楼 B319 详询数字信息社。
+项目由数字信息社管理，是堇青石计划的一部分。可以访问我们的网站了解详情：http://iolite.icoud.tk 。另外可在每周五社团活动时间至实验楼 B319 详询数字信息社。
