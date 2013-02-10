@@ -11,9 +11,9 @@ Happy to see you like to help the development of the Plain Homework project. Pla
 How you made it work? - 实现原理?
 ----------------------------------
 
-Using the mobile API of the School Platform.
+Using the mobile API of the School Platform. Based on PHP & CodeIgniter.
 
-使用校园平台的移动API。
+使用校园平台的移动API。基于PHP和CodeIgniter。
 
 Wanna help us? - 希望帮助我们?
 --------------------------------
