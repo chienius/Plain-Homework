@@ -33,6 +33,7 @@ class home extends CI_Controller {
 			$today=TRUE;
 		}
 		$date=strtotime($date);
+		$orgdate=$date;
 		if($direction!='customized'){	//如果选择日期即跳过查询可用时间戳
 			$i=0;
 			while(TRUE){
@@ -47,7 +48,7 @@ class home extends CI_Controller {
 					}
 					$i+=1;
 					if($i>10){
-						$date=time();
+						$date=$orgdate;
 						$recent_no_work=TRUE;
 						break;
 					}
