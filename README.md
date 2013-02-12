@@ -8,7 +8,7 @@ Happy to see you like to help the development of the Plain Homework project. Pla
 
 感谢您能参与 干净看作业 项目的开发。干净看作业是对同济大学第一附属中学校园平台看作业功能的一个重制。本项目的最终目的是为每一位同学提供干净、简单、易用的看作业功能。同济大学第一附属中学的校园平台是基于绿橄榄智慧校园开发的，因此其它基于绿橄榄智慧校园开发的校园平台，诸如复旦附中，也可以Fork此项目，来改进自己的校园平台。
 
-How you made it work? - 实现原理?
+How did you make it work? - 实现原理?
 ----------------------------------
 
 Using the mobile API of the School Platform. Based on PHP & CodeIgniter.
@@ -18,6 +18,6 @@ Using the mobile API of the School Platform. Based on PHP & CodeIgniter.
 Wanna help us? - 希望帮助我们?
 --------------------------------
 
-The project is running by DiTe Assn under IOLITE Project. Please view our site: http://iolite.icoud.tk
+The project is run by DiTe Assn under IOLITE Project. Please view our site: http://iolite.icoud.tk
 
 项目由数字信息社管理，是堇青石计划的一部分。可以访问我们的网站了解详情：http://iolite.icoud.tk 。另外可在每周五社团活动时间至实验楼 B319 详询数字信息社。
