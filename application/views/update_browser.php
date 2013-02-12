@@ -10,7 +10,7 @@ body, html {
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	font-family: Arial, '黑体', Helvetica, sans-serif
+	font-family: '黑体', Arial, Helvetica, sans-serif
 }
 table {
 	width: 100%;
@@ -29,7 +29,7 @@ td {
 	background-color: #fff;
 	height: 360px;
 }
-h1{
+h1 {
 	padding-top: 30px;
 }
 .content {
@@ -59,7 +59,7 @@ input {
 	border: 0px;
 	background-color: #CCC;
 	font-size: 16px;
-	font-family: Arial, '黑体', Helvetica, sans-serif;
+	font-family: '黑体', Arial, Helvetica, sans-serif
 	width: 220px;
 	height: 35px;
 }
