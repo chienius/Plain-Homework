@@ -3,9 +3,9 @@
   <div id="menu">
     <ul>
       <?php if($page=='home') { ?>
-      <li id="quicklog_brand">平台快速登录技术™</li>
+      <li id="quicklog_brand">实验性功能</li>
       <li>
-        <a href="<?=site_url('/home/tjyfz') ?>" target="_blank" title="使用同济一附中校园平台快速登录技术，有关详情，见IOLITE Project网站。">登录平台</a>
+        <a href="<?=site_url('/home/tjyfz') ?>" target="_blank" title="使用同济一附中校园平台快速登录技术。该功能测试中，可能遇到不可预料的错误，请谨慎使用。">登录平台</a>
       </li>
       <li>
         <a href="<?=site_url('login/logout') ?>">退出登录</a>
