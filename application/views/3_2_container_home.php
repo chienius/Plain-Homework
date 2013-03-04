@@ -76,6 +76,7 @@ function _customDate(){
 					echo '<ul class="items">';
 					$hwitem1=preg_replace('/p>/i', 'li>', $hwitem);
 					$hwitem1=preg_replace('/<li>(&nbsp;)+<\/li>/i', '', $hwitem1);	//除去空白项目
+					$hwitem1=preg_replace('/style=\".*\"/i', '', $hwitem1);	//除去HTML样式
 					if($hwitem1==$hwitem){
 						echo $hwitem1='<li>'.$hwitem1.'</li>';
 					}else{
