@@ -1,4 +1,5 @@
 <?php 
+date_default_timezone_set('Asia/Shanghai');
 switch(date('w', $date)){
 	case '1':
 		$week='周一';
@@ -24,7 +25,7 @@ switch(date('w', $date)){
 }
 $pastday=date('Ymd', $date-86400);
 $nextday=date('Ymd', $date+86400);
-if((!$today)&&$nextday>=date('Ymd'))
+if((!$today)&&$nextday>date('Ymd'))
 	$today=TRUE;
 ?>
 <div class="popup" id="popup3" title="选择日期">
