@@ -34,6 +34,7 @@ class sp extends CI_Controller {
 		$this->load->library('user_agent');
 		if(!$this->agent->is_browser('Internet Explorer')||$this->agent->version()>7){
 			$this->input->set_cookie('legacysupport', TRUE, 604800);
+			redirect();
 		}
 		if($this->input->post('submit')){
 			$this->input->set_cookie('legacysupport', TRUE, 604800);
