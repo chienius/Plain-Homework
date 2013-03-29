@@ -43,6 +43,8 @@ body, html {
 	left: 0px;
 	height: 100%;
 	width: 200px;
+}
+.sidebar {
 	background-color: #e7e7e7;
 	border-right-color: #b3b3b3;
 	border-right-style: solid;
@@ -184,4 +186,23 @@ body, html {
 }
 #content .last {
 	padding-bottom: 0px;
+}
+
+/* High Contract Mode */
+#content .hsubject {
+	color: #fff;
+}
+
+#content .hitems {
+	color: #fff;
+	font-weight: bold;
+}
+
+.hsidebar {
+	background-color: #7C7C7C;
+	border-right-color: #B3B3B3;
+}
+
+.hbody {
+	background-color: #000;
 }

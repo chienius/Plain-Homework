@@ -1,4 +1,5 @@
 $(document).ready(function(e) {
+	HC_MODE=0;
 	$('a').tooltip({position: {
 		my: "left+15 center", at: "right center"
 	}});
@@ -35,4 +36,20 @@ $(document).ready(function(e) {
 
 function hideAll(){
 	$('#sidebar, #remarks, .arrow').fadeOut();
+}
+
+function highContract(){
+	switch(HC_MODE){
+		case 0:
+			
+			HC_MODE=1;
+			break;
+		case 1:
+			HC_MODE=0;
+	}
+	$('.subject').toggleClass('hsubject');
+	$('.items').toggleClass('hitems');
+	$('#sidebar').toggleClass('hsidebar')
+	$('body').toggleClass('hbody');
+	$('#copyinfo, #date').toggle();
 }

@@ -1,5 +1,5 @@
 
-<div id="sidebar">
+<div id="sidebar" class="sidebar">
   <div id="menu">
     <ul>
       <?php if($page=='home') { ?>
@@ -10,8 +10,13 @@
       <li>
         <a href="<?=site_url('login/logout') ?>">退出登录</a>
       </li>
+      <!--
       <li>
         <a onclick="$('#popup1').dialog('open')" href="javascript: void(0)">使用帮助</a>
+      </li>
+      -->
+      <li>
+        <a onclick="highContract();if(!HC_MODE){$(this).text('高对比度')}else{$(this).text('正常模式')}" href="javascript: void(0)">高对比度</a>
       </li>
       <li>
         <a href="<?=site_url('/sp/aboutus') ?>">关于我们</a>
