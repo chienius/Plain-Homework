@@ -41,7 +41,6 @@ function hideAll(){
 function highContract(){
 	switch(HC_MODE){
 		case 0:
-			
 			HC_MODE=1;
 			break;
 		case 1:
