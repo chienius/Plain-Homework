@@ -1,5 +1,5 @@
+var HC_MODE=0;
 $(document).ready(function(e) {
-	HC_MODE=0;
 	$('a').tooltip({position: {
 		my: "left+15 center", at: "right center"
 	}});
