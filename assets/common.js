@@ -1,4 +1,3 @@
-var HC_MODE=0;
 $(document).ready(function(e) {
 	$('a').tooltip({position: {
 		my: "left+15 center", at: "right center"
@@ -38,6 +37,7 @@ function hideAll(){
 	$('#sidebar, #remarks, .arrow').clearQueue().fadeOut();
 }
 
+var HC_MODE=0;
 function highContract(){
 	switch(HC_MODE){
 		case 0:
@@ -47,7 +47,7 @@ function highContract(){
 		case 1:
 			$('.screen_hover').css('background-color', '#fff');
 			HC_MODE=0;
-	}
+	};
 	$('.screen_hover').fadeIn().queue(function(){
 		$('.subject').toggleClass('hsubject');
 		$('.items').toggleClass('hitems');
