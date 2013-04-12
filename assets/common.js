@@ -35,7 +35,7 @@ $(document).ready(function(e) {
 });
 
 function hideAll(){
-	$('#sidebar, #remarks, .arrow').fadeOut();
+	$('#sidebar, #remarks, .arrow').clearQueue().fadeOut();
 }
 
 function highContract(){
