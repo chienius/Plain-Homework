@@ -42,13 +42,19 @@ function highContract(){
 	switch(HC_MODE){
 		case 0:
 			HC_MODE=1;
+			$('.screen_hover').css('background-color', '#000');
 			break;
 		case 1:
+			$('.screen_hover').css('background-color', '#fff');
 			HC_MODE=0;
 	}
-	$('.subject').toggleClass('hsubject');
-	$('.items').toggleClass('hitems');
-	$('#sidebar').toggleClass('hsidebar')
-	$('body').toggleClass('hbody');
-	$('#copyinfo, #date').toggle();
+	$('.screen_hover').fadeIn().queue(function(){
+		$('.subject').toggleClass('hsubject');
+		$('.items').toggleClass('hitems');
+		$('#sidebar').toggleClass('hsidebar')
+		$('body').toggleClass('hbody');
+		$('#copyinfo, #date').toggle();
+		$(this).dequeue();
+	});
+	$('.screen_hover').delay(500).fadeOut();
 }

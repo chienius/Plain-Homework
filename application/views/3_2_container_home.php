@@ -32,11 +32,8 @@ if((!$today)&&$nextday>date('Ymd'))
   <div id="datepicker"></div>
   <input onclick="_customDate()" type="submit" value="跳转" />
 </div>
-<div class="popup" id="popup1" title="使用帮助">
-	<p>用起来很简单的啦~ 帮助什么的不需要的啦~</p>
-	<p>实际上帮助还在准备中...抱歉...因为时间来不及。</p>
-	<p>如果实在有用不来的，欢迎来<a href="<?=site_url('/sp/aboutus') ?>">找我们</a>哦！</p>
-</div>
+<div class="screen_hover"></div>
+
 <script>
 function _customDate(){
 	window.location.href = '<?=site_url('/home/main') ?>'+'/'+date1+'/customized';
