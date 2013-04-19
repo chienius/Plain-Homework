@@ -41,16 +41,17 @@
 }
 #sidebar #menu ul {
 	position: relative;
-	top: 20px;
+	top: 24px;
 	left: 10px;
 	background-color: #E7E7E7;
 }
 #sidebar #menu li{
 	font-size:12px;
-	padding-top: 5px;
-	margin-top: 0px;
+	padding-bottom: 10px;
+	padding-top: 0px;
 }
 #sidebar #sidebar_mobile_tip{
+	z-index: 10;
 	display: block;
 	position: relative;
 	left: 10%;
@@ -63,12 +64,13 @@
 /* Date */
 #container #date_wrapper{
 	position: absolute;
-	top: 45px;
 	right: 0px;
 }
 #container #date{
-	position: absolute;
-	font-size: 25px;
+	z-index: 12;
+	position: fixed;
+	top: 100px;
+	font-size: 26px;
 	width: auto;
 	right: 0;
 }
