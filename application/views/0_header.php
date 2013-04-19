@@ -1,9 +1,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<meta name="viewport" content="width=device-width; initial-scale=1.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>Plain Homework - 干净看作业</title>
 <link rel="stylesheet" href="<?=base_url() ?>/assets/style.css" />
+<link rel="stylesheet" media="screen and (max-width:800px)" href="<?=base_url() ?>/assets/style_rwd.css" />
 <script src="<?=base_url() ?>/assets/jquery-1.8.3.min.js" type="text/javascript"></script>
 <?php if($page=='home') { ?>
 <link rel="stylesheet" href="<?=base_url() ?>/assets/jqueryui/css/plain-homework/jquery-ui-1.10.0.custom.min.css" />

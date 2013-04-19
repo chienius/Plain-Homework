@@ -53,6 +53,9 @@ body, html {
 	height: 100%;
 	width: 200px;
 }
+#sidebar #sidebar_mobile_tip{
+	display: none;
+}
 .sidebar {
 	background-color: #e7e7e7;
 	border-right-color: #b3b3b3;

@@ -1,6 +1,7 @@
 
 <div id="sidebar_wrapper">
 	<div id="sidebar" class="sidebar">
+		<div id="sidebar_mobile_tip">菜单▼</div>
 		<div id="menu">
 			<ul>
 				<?php if($page=='home') {
