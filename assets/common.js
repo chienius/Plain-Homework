@@ -10,11 +10,12 @@ $(document).ready(function(e) {
 		draggable: false,
 	});
 	$('#datepicker').datepicker();
+	$('#sidebar').delay(500).fadeOut();
 	
 	$('#sidebar_wrapper').hover(function(){
-		$(this).find('#sidebar').fadeIn();
+		$(this).find('#sidebar').stop().fadeIn();
 	}, function(){
-		$(this).find('#sidebar').fadeOut();
+		$(this).find('#sidebar').stop().fadeOut();
 	});
 	$('#date_wrapper').hover(function(){
 		$('#picker, #date .arrow').stop().fadeIn();
