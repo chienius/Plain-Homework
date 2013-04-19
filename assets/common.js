@@ -1,7 +1,4 @@
 $(document).ready(function(e) {
-	$('a').tooltip({position: {
-		my: "left+15 center", at: "right center"
-	}});
 	$('.arrow').tooltip();
 	$('.popup').dialog({
 		autoOpen: false,
@@ -11,30 +8,46 @@ $(document).ready(function(e) {
 	});
 	$('#datepicker').datepicker();
 	
-	if($(window).width()>800){
-		$('#sidebar').delay(500).fadeOut();	
-		$('#sidebar_wrapper').hover(function(){
-			$(this).find('#sidebar').stop().fadeIn();
-		}, function(){
-			$(this).find('#sidebar').stop().fadeOut();
-		});
-		$('#date_wrapper').hover(function(){
-			$('#picker, #date .arrow').stop().fadeIn();
-		}, function(){
-			$('#picker, #date .arrow').stop().fadeOut();
-		});
-		$('#date .arrow a').hover(function(){
-			$(this).css('color', '#000');
-		}, function(){
-			$(this).css('color', '#c1c1c1');
-		});
-	}else{
-		$('#sidebar').click(function(){
-			$('#sidebar #menu').toggle();
-		});
-	};
-	
+	init();
 });
+
+function init(){
+	if($(window).width()>800){
+		wideScreen();
+	}else{
+		mobileScreen();
+	};
+}
+
+function wideScreen(){
+	SC_MODE=1;
+	$('a').tooltip({position: {
+		my: "left+15 center", at: "right center"
+	}});
+	$('#sidebar').delay(500).fadeOut();	
+	$('#sidebar_wrapper').hover(function(){
+		$(this).find('#sidebar').stop().fadeIn();
+	}, function(){
+		$(this).find('#sidebar').stop().fadeOut();
+	});
+	$('#date_wrapper').hover(function(){
+		$('#picker, #date .arrow').stop().fadeIn();
+	}, function(){
+		$('#picker, #date .arrow').stop().fadeOut();
+	});
+	$('#date .arrow a').hover(function(){
+		$(this).css('color', '#000');
+	}, function(){
+		$(this).css('color', '#c1c1c1');
+	});
+}
+
+function mobileScreen(){
+	SC_MODE=0;
+	$('#sidebar').click(function(){
+		$('#sidebar #menu').toggle();
+	});
+}
 
 var HC_MODE=0;
 function highContract(){
@@ -52,7 +65,7 @@ function highContract(){
 		$('.items').toggleClass('hitems');
 		$('#sidebar').toggleClass('hsidebar')
 		$('body').toggleClass('hbody');
-		$('#copyinfo, #date').toggle();
+		if(SC_MODE) {$('#copyinfo, #date').toggle();}
 		$(this).dequeue();
 	});
 	$('.screen_hover').delay(500).fadeOut();
