@@ -37,6 +37,15 @@ body, html {
 
 
 /* Sidebar */
+#sidebar_wrapper{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 200px;
+	padding: 0;
+	margin: 0;
+}
 #sidebar {
 	position: fixed;
 	top: 0px;
@@ -112,17 +121,28 @@ body, html {
 	width: 420px;
 	text-align: center;
 }
+#date_wrapper {
+	position: fixed;
+	right: 100px;
+	top: 55px;
+	font-size: 48px;
+	width: 420px;
+}
 #date a {
 	text-decoration: none;
 	color: #c1c1c1;
 }
 #date .arrow {
 	color: #c1c1c1;
+	display: none;
 }
 #date #date_a {
 	display: inline;
 }
 #picker {
+	clear:both;
+	position:relative;
+	top: 58px;
 	display: none;
 	height: 50px;
 	background-color: #000;
@@ -136,6 +156,7 @@ body, html {
 }
 #picker a{
 	color: #fff;
+	text-decoration: none;
 }
 #container #content {
 	margin-top: 185px;

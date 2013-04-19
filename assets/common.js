@@ -11,20 +11,15 @@ $(document).ready(function(e) {
 	});
 	$('#datepicker').datepicker();
 	
-	var id=0;
-	id=setInterval('hideAll()', 1000);
-    $('#content').mousemove(function(){
-		clearInterval(id);
-		$('#sidebar, #remarks, .arrow').fadeIn();
-		id=setInterval('hideAll()', 1000);
-	});
-	$('#sidebar, #remarks, #date, #picker').mouseover(function(){
-		clearInterval(id);
-	});
-	$('#date').hover(function(){
-		$('#picker').stop('', true, true).show();
+	$('#sidebar_wrapper').hover(function(){
+		$(this).find('#sidebar').fadeIn();
 	}, function(){
-		$('#picker').stop('', true, true).hide();
+		$(this).find('#sidebar').fadeOut();
+	});
+	$('#date_wrapper').hover(function(){
+		$('#picker, #date .arrow').stop().fadeIn();
+	}, function(){
+		$('#picker, #date .arrow').stop().fadeOut();
 	});
 	$('#date .arrow a').hover(function(){
 		$(this).css('color', '#000');
@@ -32,10 +27,6 @@ $(document).ready(function(e) {
 		$(this).css('color', '#c1c1c1');
 	});
 });
-
-function hideAll(){
-	$('#sidebar, #remarks, .arrow').clearQueue().fadeOut();
-}
 
 var HC_MODE=0;
 function highContract(){
