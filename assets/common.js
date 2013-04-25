@@ -26,12 +26,12 @@ function wideScreen(){
 	}});
 	$('#sidebar').delay(500).fadeOut();	
 	$('#sidebar_wrapper').hover(function(){
-		$(this).find('#sidebar').stop().fadeIn();
+		$(this).find('#sidebar').fadeIn();
 	}, function(){
 		$(this).find('#sidebar').stop().fadeOut();
 	});
 	$('#date_wrapper').hover(function(){
-		$('#picker, #date .arrow').stop().fadeIn();
+		$('#picker, #date .arrow').fadeIn();
 	}, function(){
 		$('#picker, #date .arrow').stop().fadeOut();
 	});
