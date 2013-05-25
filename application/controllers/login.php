@@ -8,6 +8,7 @@ class login extends CI_Controller {
 	public function index($errorcode=null)
 	{
 		$this->load->library('user_agent');
+        $this->load->helper('form');
 		if($this->input->cookie('ph_logged_in', TRUE)) {
 			redirect('home/main');
 			exit();
