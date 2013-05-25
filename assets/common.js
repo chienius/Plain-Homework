@@ -32,7 +32,9 @@ function wideScreen(){
 	});
 	$('#date_wrapper').hover(function(){
 		$('#picker, #date .arrow').fadeIn();
+		$(this).height(106);
 	}, function(){
+		$(this).height('auto');
 		$('#picker, #date .arrow').stop().fadeOut();
 	});
 	$('#date .arrow a').hover(function(){
@@ -44,6 +46,9 @@ function wideScreen(){
 
 function mobileScreen(){
 	SC_MODE=0;
+	$('#content').click(function(){
+		$('#sidebar #menu').hide();
+	});
 }
 
 var HC_MODE=0;
