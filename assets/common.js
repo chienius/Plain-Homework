@@ -46,7 +46,7 @@ function wideScreen(){
 
 function mobileScreen(){
 	SC_MODE=0;
-	$('#content').click(function(){
+	$('#sidebar').mouseleave(function(){
 		$('#sidebar #menu').hide();
 	});
 }
