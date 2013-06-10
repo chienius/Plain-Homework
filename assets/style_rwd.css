@@ -36,7 +36,7 @@
 	display: none;
 }
 #sidebar #menu{
-	width: 100px;
+	width: 50%;
 	display: none;
 }
 #sidebar #menu ul {
@@ -46,8 +46,8 @@
 	background-color: #E7E7E7;
 }
 #sidebar #menu li{
-	font-size:12px;
-	padding-bottom: 10px;
+	font-size:20px;
+	padding-bottom: 40px;
 	padding-top: 0px;
 }
 #sidebar #sidebar_mobile_tip{
