@@ -15,7 +15,11 @@ class tjyfz_api extends CI_Model {
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
 		curl_setopt($ch, CURLOPT_POST, 0); 
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $curlPost);
+		curl_setopt($ch, CURLOPT_CONNECTTIMEOUT, 10);
 		$data = curl_exec($ch);
+		if(curl_error($ch)) {
+			$this->load->view('nc_error');
+		}
 		curl_close($ch);
 		if(empty($data)){
 			return '-1';	//Login error
